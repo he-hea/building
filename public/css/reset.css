@@ -1,0 +1,90 @@
+
+.body_area { min-width: 100%; overflow: hidden; }
+section { max-width: 1200px; position: relative; margin: 150px auto; overflow: hidden; }
+section h2 { font-size: 40px; font-weight: 600; letter-spacing: -3px; line-height: 1.3; }
+
+/* header */
+.header_area { background: url(../images/bg20.jpg) no-repeat center center; background-size: cover; height: 790px; }
+
+header { position: relative; text-align: center; height: 90px; background: rgba(253,230,36,0.5); }
+header::after { content: ""; display: block; clear: both; }
+header h1.logo { position: absolute; left: 0; padding: 10px 80px; display: inline-block; }
+header h1.logo img { width: 200px; }
+header ul { display: inline-block; margin-top: 26px; }
+header ul li { float: left; margin-left: 120px; font-size: 22px; font-weight: 600; }
+header ul li:first-child { margin-left: 0; }
+header ul li::after { content: ""; position: absolute; width: 4px; height: 4px; background: #000; top: 44%; margin-left: 56px; } 
+header ul li:last-child::after {display: none;}
+header .hbg { position: absolute; display: inline-block; right: 0; padding: 20px 30px; }
+header .hbg img { width: 32px; }
+
+.header_area p { font-size: 40px; font-weight: 600; position: absolute; top: 30%; right: 18%; transform: translate(0,-50%); }
+.header_area p img { position: absolute; right: 0; display: block; width: 340px; }
+
+/* .slide_container { padding-bottom: 150px; } */
+/* .slide_container .txt_box { margin-top: 60px; width: 50%; text-align: right; } */
+.slide_container .txt_box span { font-size: 16px; }
+.slide_container .txt_box .green { font-size: 40px; font-weight: 600; color: #facb10; }
+.slide_container .txt_box p { font-size: 18px; }
+/* .slide_container .txt_box::after { content: ""; position: absolute; display: inline-block; top: 23%; right: 12%; width: 350px; height: 350px; background: url(../images/baner_01.png) no-repeat center center ; background-size: cover; } */
+.slide_container .btn_prev, .slide_container .btn_next { position: absolute; top: 50%; }
+.slide_container .btn_next { right: 0; }
+.slide_container .btn_prev img { width: 40px; display: inline-block; }
+.slide_container .btn_next img { width: 40px; display: inline-block; }
+
+.slide { width: 1200px; height: 382px; display: block; }
+.sl_01 { width: 1200px; height: 382px; position: relative; }
+.sl_01 .txt_box { margin-top: 60px; width: 50%; text-align: right; }
+.sl_01::before { content: ""; position: absolute; display: inline-block; top: 0%; right: 12%; width: 350px; height: 350px; background: url(../images/baner_01.png) no-repeat center center ; background-size: cover; }
+
+.sl_02 { width: 1200px; height: 382px; position: relative; }
+.sl_02 .txt_box { margin-top: 60px; width: 50%; text-align: left; float: right; }
+.sl_02 .txt_box::after { content: ""; position: absolute; display: inline-block; top: 9%; left: 12%; width: 350px; height: 350px; background: url(../images/baner_01.png) no-repeat center center ; background-size: cover; }
+
+.content .content_bg { width: 100%; height: 550px; background: url(../images/bg27.jpg) no-repeat center center; background-size: cover; }
+.content .content_txt { position: absolute; display: inline-block; padding: 100px 20px 50px 50px; top: 0; right: 10%; height: 100%; text-align: right; background-color: rgba(253,230,36,0.5); }
+.content .content_txt h2 { color: #fff; margin-bottom: 20px; }
+.content .content_txt p { margin-bottom: 20px; font-size: 36px; color: #333; font-weight: 600; letter-spacing: -2px; }
+.content .content_txt p:last-child { font-size: 18px; color: #fff; font-weight: 500; }
+
+section.safety { background-color: #eee; max-width: 100%; z-index: -2; margin-bottom: 0; }
+.safety .safe_box { max-width: 1200px; margin: 0 auto; padding: 50px 0 40px; }
+.safety .safe_box::after { content: ""; display: block; clear: both; }
+.safety .safe_box ul { margin: 40px auto 0; width: 1000px; height: 300px; }
+.safety .safe_box ul li { float: left; width: calc(100% / 3); text-align: center; }
+.safety .safe_box ul li p { font-size: 22px; margin-top: 40px; }
+.safety .safe_box ul li p span { font-size: 30px; position: relative; }
+.safety .safe_box ul li p span::before { content: ""; position: absolute; display: inline-block; width: 100%; height: 22px; bottom: 8%; background: #facb10; z-index: -1; }
+.safety .safe_box ul li img { width: 150px; margin: 0 auto; }
+
+section.notice { max-width: 100%; margin: 0; background: #facb10; }
+section.notice .notice_txt { width: 1200px; height: 40px; margin: 0 auto; }
+section.notice ul::after { content: ""; display: block; clear: both; }
+section.notice ul li { float: right; }
+section.notice ul li:first-child { float: left; }
+section.notice ul li.n_btn { position: relative; background: #eee; width: 22px; height: 22px; margin-top: 8px; margin-right: 14px; }
+section.notice ul li p { font-size: 16px; display: inline-block; margin-top: -19px; }
+section.notice ul li:first-child::before { content: ""; display: inline-block; margin: 7px 14px 0 0; width: 24px; height: 24px; background: url(../images/audio.png) no-repeat center center; background-size: cover; }
+section.notice ul li span { display: none; }
+section.notice ul li a::after { content: ""; position: absolute; display: inline-block; top: 24%; left: 16%; width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(45deg); }
+section.notice ul li:last-child a::after { content: ""; position: absolute; display: inline-block; top: 24%; left: 38%; width: 10px; height: 10px; border-top: 2px solid #000; border-right: 2px solid #000; transform: rotate(-135deg); }
+
+.footer_area { max-width: 100%; border-top: 1px solid #999; }
+
+.footer_info { border-bottom: 1px solid #999; }
+.footer_info ul { width: 1200px; margin: 0 auto; }
+.footer_info ul::after { clear: both; content: ""; display: block; }
+.footer_info ul li { float: left; margin: 10px 18px 10px 0; }
+.footer_info ul li:first-child { font-weight: 600; }
+.footer_info ul li a { font-size: 16px; }
+
+footer { width: 1200px; margin: 0 auto; }
+footer img { display: inline-block; width: 150px; margin: 0 80px 0 70px; }
+footer address { display: inline-block; margin: 40px 0; }
+footer address span { font-size: 16px; }
+footer address p { margin-top: 20px; font-size: 16px; font-weight: 600; }
+
+
+
+
+

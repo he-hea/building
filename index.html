@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400&display=swap&subset=korean">
+	<link rel="stylesheet" href="./public/css/reference.css"/>	
+	<link rel="stylesheet" href="./public/css/reset.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRINGWATER</title>
+
+    <script>
+        const all = ele => document.querySelectorAll(ele)
+        const one = ele => document.querySelector(ele)
+        const slide = _ => {
+          const wrap = one('.slide')
+          const target = wrap.children[0]
+          const len = target.children.length
+          const liStyle = `
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;transition:1s;opacity:0
+          `
+          target.style.cssText = `position:relative;`
+          Array.from(target.children)
+          .forEach(ele => ele.style.cssText = liStyle)
+          target.children[0].style.opacity = 1
+          let pos = 0
+          setInterval(_ => {
+            target.children[pos].style.opacity = 0
+            pos = (pos + 1) % len 
+            target.children[pos].style.opacity = 1
+          }, 3000)
+        }
+        window.onload = function () {
+          slide()
+        }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <div class="header_area">
+            <header>                
+                <h1 class="logo"><img src="./public/images/logo.png" alt=""></h1>
+                <ul>
+                    <li><a href="javascript:void(0);">회사소개</a></li>
+                    <li><a href="javascript:void(0);">사업소개</a></li>
+                    <li><a href="javascript:void(0);">고객센터</a></li>
+                    <li><a href="javascript:void(0);">사이트이동</a></li>
+                    <li><a href="javascript:void(0);">관리비/임대료</a></li>
+                </ul>
+            </header>
+            <p>빠르고 쉬운 똑똑한 건물관리<img src="public/images/hero_ko.png" alt="logo2"></p>
+        </div>
+        <!-- body -->
+        <div class="body_area">
+            <section class="slide_container">
+                <h2>언제 어디서든<br>SEBOMI는 간편한 서비스를 제공합니다.</h2>
+                <div class="slide">
+                    <ul>
+                        <li class="sl_01">
+                            <div class="txt_box">
+                                <span>기업규모, 건물, 연령제한없이</span>
+                                <p class="green">도입 첫날부터<br>누구나 쉽게</p>
+                                <p>관리비 입금관리부터 입주자 변동이력까지 <br>누구나 쉽게 세보미 도입 첫날부터 바로 사용할 수 있습니다.<br>쉽고 편한 건물관리 지금바로 시작해 보세요.</p>
+                            </div>
+                        </li>
+                        <li class="sl_02">
+                            <div class="txt_box">
+                                <span>기업규모, 건물, 연령제한없이</span>
+                                <p class="green">도입 첫날부터<br>누구나 쉽게</p>
+                                <p>관리비 입금관리부터 입주자 변동이력까지 <br>누구나 쉽게 세보미 도입 첫날부터 바로 사용할 수 있습니다.<br>쉽고 편한 건물관리 지금바로 시작해 보세요.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="content_bg"></div>
+                <div class="content_txt">
+                    <h2>복잡한 건물관리 그만!<br>SEBOMI로 편리하게 만나보세요.</h2>
+                    <p>효율적으로<br>건물을 운영하는 방법</p>
+                    <p>세입자와 세대주 간의 소통 및 정보 공유를 통해 운영과 관리의<br>효율성이 높아지고 수익성이 개선됩니다.<br>공지 및 민원 알림을 통해 문의사항과 하자부수에 빠른 대처로<br>건물관리를 쉽게 할 수 있습니다.</p>
+                </div>
+            </section>
+
+            <section class="safety">
+                <div class="safe_box">
+                    <h2>SEBOMI를<br>안심하고 사용할 수 있습니다.</h2>
+                    <ul>
+                        <li>
+                            <img src="./public/images/hotel.png" alt=""> 
+                            <p>국내 함께하는 건물<br><span>45개</span></p>
+                        </li>
+                        <li>
+                            <img src="./public/images/team.png" alt=""> 
+                            <p>계약 한 사업자 수<br><span>1,250명</span></p>
+                        </li>
+                        <li>
+                            <img src="./public/images/security.png" alt=""> 
+                            <p>국제 인증 취득<br><span>보안인증</span></p>
+                        </li>
+                    </ul>
+                </div>                
+            </section>
+
+            <section class="notice">
+                <div class="notice_txt">
+                    <ul>
+                        <li><p>[공지] KB국민카드 온라인 결제 서비스 일시 중단 안내 입니다.</p></li>
+                        <li class="n_btn"><a href="javascript:void(0);"><span>prev</span></a></li>
+                        <li class="n_btn"><a href="javascript:void(0);"><span>next</span></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- 푸터 -->
+        <div class="footer_area">
+            <div class="footer_info">
+                <ul>
+                    <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0);">이메일집단수집거부</a></li>
+                    <li><a href="javascript:void(0);">이용약관</a></li>
+                </ul>
+            </div>
+            <footer>
+                <img src="./public/images/logo_coin.png" alt="">
+                <address>
+                    <span>
+                        (주)샘이깊은물 <br>대표이사 : 백성식 <br>
+                        주소 : 경기도 안양시 동안구 시민대로 267 아크로팰리스 403호 <br>
+                        사업자등록번호 : 727-81-08058 <br>
+                        TEL/FAX : 031-0868-5508 / 031-382-1492<br>
+                    </span>
+                    <p>COPYRIGHT © 2020 SPRINGWATER. ALL RIGHTS RESERVED.</p>
+                </address>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
